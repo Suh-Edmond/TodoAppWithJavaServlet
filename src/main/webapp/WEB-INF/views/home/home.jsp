@@ -1,14 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Todo App</title>
-</head>
-<body>
-	<div>
-		<h1>Hello World</h1>
-	</div>
-</body>
-</html>
+<%@ include file="/WEB-INF/common/header.jspf"%>
+<%@ include file="/WEB-INF/common/nav.jspf"%>
+
+<section class="mt-5">
+</section>
+<section class="mt-5">
+</section>
+<section >
+		<div class="d-flex justify-content-center mt-5">
+			<h6 >Welcome to Todo Application with Java Servlets</h6>
+		</div>
+</section>
+<%@ include file="/WEB-INF/common/footer.jspf"%>
