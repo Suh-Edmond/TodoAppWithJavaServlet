@@ -11,28 +11,40 @@
 		<div class="col-lg-12">
 			 	<ul class="list-group">
 					<c:forEach items="${todos}" var="todo">
-					  <li class="list-group-item"> 
-					    <input class="form-check-input" type="checkbox" name="status" id="todoStatus"> 
-					    ${todo.name} 
-					   <div class="d-flex justify-content-end">
-	
-						   <a class="btn btn-secondary btn-sm" type="submit" href="/todos/edit?id=${todos.indexOf(todo)}">Edit</a>
-						   <span class="px-5">
-								   <form action="/todos/delete?id=${todos.indexOf(todo)}" method="post">
-								    <button class=" btn btn-danger btn-sm" type="submit">Del</button>
-								   </form>
-						    </span>
-					    </div>
-					  </li>
+					<c:if test="${!todo.status}">
+						  <li class="list-group-item"> 
+							    	<input class="form-check-input " type="checkbox" name="status"/> 
+							    		${todo.name} ${todo.status}
+						   			<div class="d-flex justify-content-end">
+								   			<a class="btn btn-secondary btn-sm" type="submit" href="/todos/edit?id=${todos.indexOf(todo)}&name="${todo.name}">Edit</a>
+								   			<span class="px-5">
+												   <form action="/todos/delete?id=${todos.indexOf(todo)}" method="post">
+												    		<button class=" btn btn-danger btn-sm" type="submit">Del</button>
+												   </form>
+								    		</span>
+						    		</div>
+						  </li>
+					  </c:if>
+					  <c:if test="${todo.status}">
+							  <li class="list-group-item  "> 
+								    	<input class="form-check-input " type="checkbox" name="status" onchange="markTodo()" id="checkedTodo"/> 
+								    		${todo.name} ${todo.status}
+							   			<div class="d-flex justify-content-end">
+									   			<a class="btn btn-secondary btn-sm" type="submit" href="/todos/edit?id=${todos.indexOf(todo)}">Edit</a>
+									   			<span class="px-5">
+													   <form action="/todos/delete?id=${todos.indexOf(todo)}" method="post">
+													    		<button class=" btn btn-danger btn-sm" type="submit">Del</button>
+													   </form>
+									    		</span>
+							    		</div>
+							  </li>
+						</c:if>
 					</c:forEach>
 				</ul>
 		</div>
 	</div>
 </section>
 
-<script src="/WEB-INF/common/MarkTodo.js">
-    
-</script>
 
 <%@ include file="/WEB-INF/common/footer.jsp"%>
 
