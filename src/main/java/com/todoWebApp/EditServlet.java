@@ -29,10 +29,11 @@ public class EditServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		Todo edited = todoService.getTodoById(id);
+	 
 		request.setAttribute("todo", edited);
 		request.setAttribute("id", id);
 		request.getRequestDispatcher("/WEB-INF/views/todo/edit_todo.jsp").forward(request, response);
-		System.out.println(request.getParameter("status"));
+	 
 	}
 
 	/**
