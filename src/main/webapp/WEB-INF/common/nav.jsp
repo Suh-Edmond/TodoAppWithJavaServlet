@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">TodoApp</a>
+    <a class="navbar-brand" href="/">Todo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,13 +10,25 @@
           <a class="nav-link active" aria-current="page" href="/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/todo">Todos</a>
+          <a class="nav-link" href="/todos">My Todos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feedback</a>
         </li>
       </ul>
+      <% if(request.getSession().getAttribute("name") == null) {%>
       <form class="d-flex">
   			<a class="nav-link" href="/login">Login</a>
-  			
       </form>
+      <%} %>
+       <%  if(request.getSession().getAttribute("name") != null) {%>
+        <form class="d-flex"  >
+  			<a class="nav-link" href="/logout">Logout</a>
+  		</form>
+      <%} %>
     </div>
   </div>
 </nav>
