@@ -1,4 +1,4 @@
-package welcome;
+package com.welcome;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Welcome
+ * Servlet implementation class Home
  */
-@WebServlet("/")
-public class Welcome extends HttpServlet {
+@WebServlet("/home")
+public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Welcome() {
+    public Home() {
         super();
         // TODO Auto-generated constructor stub
     }

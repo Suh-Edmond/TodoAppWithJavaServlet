@@ -1,2 +1,13 @@
-/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/welcome/Home.java
-/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/welcome/Welcome.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/TodoList.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/Todo.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/CheckTodoServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/authenticate/LogoutServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/welcome/Welcome.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/user/User.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/EditServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/TodoService.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/authenticate/LoginServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/AddTodoServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/authenticate/FilterAuth.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/todoWebApp/DeleteTodoServlet.java
+/home/suh/Documents/GG_School/JSP_Projects/TodoApp/src/main/java/com/welcome/Home.java
